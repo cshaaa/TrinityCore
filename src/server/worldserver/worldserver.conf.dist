@@ -69,7 +69,7 @@ RealmID = 1
 #        Example:     "@prefix@/share/trinitycore"
 #        Default:     "."
 
-DataDir = "."
+DataDir = /home/chensh/server/data
 
 #
 #    LogsDir
@@ -78,7 +78,7 @@ DataDir = "."
 #                     Logs directory must exists, or log file creation will be disabled.
 #        Default:     "" - (Log files will be stored in the current path)
 
-LogsDir = ""
+LogsDir = "/home/chensh/server/bin/logs"
 
 #
 #    LoginDatabaseInfo
@@ -362,7 +362,7 @@ DisconnectToleranceInterval = 0
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-mmap.enablePathFinding = 0
+mmap.enablePathFinding = 1
 
 #
 #    vmap.enableLOS
@@ -528,7 +528,7 @@ PacketLogFile = ""
 #                     16 - (FFA_PVP, Free for all pvp mode like arena PvP in all zones except rest
 #                          activated places and sanctuaries)
 
-GameType = 0
+GameType = 1
 
 #
 #    RealmZone
@@ -879,7 +879,7 @@ DisableWaterBreath = 4
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-AllFlightPaths = 0
+AllFlightPaths = 1
 
 #
 #    InstantFlightPaths
@@ -888,7 +888,7 @@ AllFlightPaths = 0
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-InstantFlightPaths = 0
+InstantFlightPaths = 1
 
 #
 #    AlwaysMaxSkillForLevel
@@ -905,7 +905,7 @@ AlwaysMaxSkillForLevel = 0
 #        Default:     1 - (Enabled)
 #                     0 - (Disabled)
 
-ActivateWeather = 1
+ActivateWeather = 0
 
 #
 #    CastUnstuck
@@ -1131,7 +1131,7 @@ BeepAtStart = 1
 #        Example:     "Welcome to John's Server!@This server is proud to be powered by Trinity Core."
 #        Default:     "Welcome to a Trinity Core server."
 
-Motd = "Welcome to a Trinity Core server."
+Motd = "欢迎来到魔兽世界！"
 
 #
 #    Server.LoginInfo
@@ -1229,7 +1229,7 @@ BirthdayTime = 1222964635
 #                     4  - (Enable world only)
 #                     0  - (All disabled)
 
-Updates.EnableDatabases = 7
+Updates.EnableDatabases = 0
 
 #
 #    Updates.AutoSetup
@@ -1427,7 +1427,7 @@ Warden.BanDuration = 86400
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-AllowTwoSide.Interaction.Calendar = 0
+AllowTwoSide.Interaction.Calendar = 1
 
 #
 #    AllowTwoSide.Interaction.Channel
@@ -1435,7 +1435,7 @@ AllowTwoSide.Interaction.Calendar = 0
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-AllowTwoSide.Interaction.Channel = 0
+AllowTwoSide.Interaction.Channel = 1
 
 #
 #    AllowTwoSide.Interaction.Group
@@ -1459,7 +1459,7 @@ AllowTwoSide.Interaction.Guild = 0
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-AllowTwoSide.Interaction.Auction = 0
+AllowTwoSide.Interaction.Auction = 1
 
 #
 #    AllowTwoSide.Trade
@@ -1467,7 +1467,7 @@ AllowTwoSide.Interaction.Auction = 0
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-AllowTwoSide.Trade = 0
+AllowTwoSide.Trade = 1
 
 #
 #    TalentsInspecting
@@ -1997,8 +1997,8 @@ Rate.Skill.Discovery = 1
 Rate.Drop.Item.Poor             = 1
 Rate.Drop.Item.Normal           = 1
 Rate.Drop.Item.Uncommon         = 1
-Rate.Drop.Item.Rare             = 1
-Rate.Drop.Item.Epic             = 1
+Rate.Drop.Item.Rare             = 3
+Rate.Drop.Item.Epic             = 2
 Rate.Drop.Item.Legendary        = 1
 Rate.Drop.Item.Artifact         = 1
 Rate.Drop.Item.Referenced       = 1
@@ -2108,7 +2108,7 @@ Rate.Talent = 1
 #        Description: Reputation gain rate.
 #        Default:     1
 
-Rate.Reputation.Gain = 1
+Rate.Reputation.Gain = 3
 
 #
 #    Rate.Reputation.LowLevel.Kill
@@ -2159,10 +2159,10 @@ Rate.InstanceResetTime = 1
 #                     1 - (SkillGain.Gathering)
 #                     1 - (SkillGain.Weapon)
 
-SkillGain.Crafting  = 1
-SkillGain.Defense   = 1
-SkillGain.Gathering = 1
-SkillGain.Weapon    = 1
+SkillGain.Crafting  = 20
+SkillGain.Defense   = 20
+SkillGain.Gathering = 3
+SkillGain.Weapon    = 20
 
 #
 #    SkillChance.Orange
@@ -2177,8 +2177,8 @@ SkillGain.Weapon    = 1
 
 SkillChance.Orange = 100
 SkillChance.Yellow = 75
-SkillChance.Green  = 25
-SkillChance.Grey   = 0
+SkillChance.Green  = 50
+SkillChance.Grey   = 25
 
 #
 #    SkillChance.MiningSteps
@@ -2246,7 +2246,7 @@ DurabilityLossChance.Block = 0.05
 #                     MaxPlayerLevel+1 - (Disabled)
 #                     -10              - (Enabled, Level 1+ characters have 10 minute duration)
 
-Death.SicknessLevel = 11
+Death.SicknessLevel = 76
 
 #
 #    Death.CorpseReclaimDelay.PvP
@@ -2276,7 +2276,7 @@ Death.Bones.BattlegroundOrArena = 1
 #        Default:     1 - (Enabled)
 #                     0 - (Disabled)
 
-Die.Command.Mode = 1
+Die.Command.Mode = 0
 
 #
 ###################################################################################################
